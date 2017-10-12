@@ -1,0 +1,1 @@
+By default, SFC visualizations are exported as tex files and compiled in this folder.
