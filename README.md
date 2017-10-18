@@ -1,9 +1,9 @@
-The sfcpp library is published under an Apache 2.0 license. If you use the sfc part of this project for research purposes, please cite one of the following publications:
-David Holzmüller: Efficient Neighbor-Finding on Space-Filling Curves. Bachelor Thesis (2017)
+The sfcpp library is published under an Apache 2.0 license. The sfc part of this library is described in my bachelor thesis (https://arxiv.org/abs/1710.06384). If you use the sfc part of this project for research purposes, please cite one of the following publications:
+- David Holzmüller: Efficient Neighbor-Finding on Space-Filling Curves. Bachelor Thesis (2017).
 
 The sfcpp library can be compiled by executing the top-level Makefile (make debug / make release). This Makefile executes cmake on CMakeLists.txt to generate a Makefile in the build folder, which is then automatically executed using make to compile the library. 
 The modules img, sfc and the test code can be excluded from the build process. The test code requires all modules to be built and the img module requires the OpenCV libraries to be installed. The modules latex and sfc use the Color class of the img module.
-The sfcpp library requires the libraries Eigen3 and boost. It has only been tested on an Ubuntu system, support for other systems is not guaranteed.
+The sfcpp library requires the libraries Eigen3 and boost. It has only been tested on an Ubuntu system but contains very little platform-dependent code and should be rather easy to port to other systems.
 
 
 The sfcpp library contains the following modules:
@@ -36,7 +36,7 @@ strings - contains string helper functions
 
 time - contains a Stopwatch class
 
-A separate folder called "test" contains code that is compiled for execution and linked against the library. Currently, it contains code for rendering space-filling curves and making performance tests. The code there can also be used as an example of how to use the sfc module.
+A separate folder called "test" contains code that is compiled for execution and linked against the library. Currently, it contains code for rendering and analyzing space-filling curves and making performance tests. The code there can also be used as an example of how to use the sfc module.
 
 
 
